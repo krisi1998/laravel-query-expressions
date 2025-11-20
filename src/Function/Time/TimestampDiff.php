@@ -62,6 +62,7 @@ class TimestampDiff implements Expression
                 callback: function ($value) {
                     $yearsDiff = "strftime('%Y', {$value['to']}) - strftime('%Y', {$value['from']})";
                     $monthsDiff = "strftime('%m', {$value['to']}) - strftime('%m', {$value['from']})";
+
                     return "({$yearsDiff} * 12) + {$monthsDiff}";
                 }),
             TimeUnits::YEAR => "strftime('%Y', {$to}) - strftime('%Y', {$from})",

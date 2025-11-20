@@ -31,26 +31,26 @@ enum TimeUnits: string
     public function toSqlServer(): string
     {
         return match ($this) {
-            self::SECOND    => 'Second',
-            self::MINUTE    => 'Minute',
-            self::HOUR      => 'hour',
-            self::DAY       => 'Day',
-            self::WEEK      => 'Week',
-            self::MONTH     => 'Month',
-            self::YEAR      => 'Year',
+            self::SECOND => 'Second',
+            self::MINUTE => 'Minute',
+            self::HOUR => 'hour',
+            self::DAY => 'Day',
+            self::WEEK => 'Week',
+            self::MONTH => 'Month',
+            self::YEAR => 'Year',
         };
     }
 
     public function toMySql(): string
     {
         return match ($this) {
-            self::SECOND    => 'SECOND',
-            self::MINUTE    => 'MINUTE',
-            self::HOUR      => 'HOUR',
-            self::DAY       => 'DAY',
-            self::WEEK      => 'WEEK',
-            self::MONTH     => 'MONTH',
-            self::YEAR      => 'YEAR',
+            self::SECOND => 'SECOND',
+            self::MINUTE => 'MINUTE',
+            self::HOUR => 'HOUR',
+            self::DAY => 'DAY',
+            self::WEEK => 'WEEK',
+            self::MONTH => 'MONTH',
+            self::YEAR => 'YEAR',
         };
     }
 }
