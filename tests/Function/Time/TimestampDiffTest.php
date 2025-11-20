@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\DB;
 use Tpetry\QueryExpressions\Enums\TimeUnits;
 use Tpetry\QueryExpressions\Function\Time\TimestampDiff;
 
